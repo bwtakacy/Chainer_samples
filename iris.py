@@ -37,7 +37,8 @@ class IrisChain(Chain):
         return h2
 
 model = IrisChain()
-optimizer = optimizers.SGD()
+#opimizer = optimizers.SGD()
+optimizer = optimizers.Adam()
 optimizer.setup(model)
 
 for i in range(10000):
